@@ -1,8 +1,12 @@
+sortiranje
+
 public static void main(String[] args){
+
+//sort array
+
         int array[] = new int[]{9,8,5,1,0,-5};
         for(int i=0; i<array.length; i++) {
             for(int j=i+1; j<array.length; j++){
-            
                 int temp=0;
             //rastuci niz
                 if(array[i] > array[j]) {
@@ -15,4 +19,7 @@ public static void main(String[] args){
             System.out.println(array[i]);
         }
 
-    }
+}
+        
+        
+    
