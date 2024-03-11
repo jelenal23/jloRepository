@@ -31,7 +31,7 @@ public class UserDB {
     }
 
 
- // geteri i seteri
+    //getters and setters
     public String getIdUser() {
         return idUser;
     }

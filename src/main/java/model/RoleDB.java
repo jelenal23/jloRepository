@@ -19,7 +19,7 @@ public class RoleDB {
     }
 
 
-    //geteri i seteri
+    //getters and setters
     public int getRoleId() {
         return roleId;
     }

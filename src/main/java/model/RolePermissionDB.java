@@ -5,8 +5,8 @@ import javax.persistence.*;
 @Entity
 @Table(name = "rolePermission")
 
-@IdClass(RolePermissionId.class) //pravim kompozitni kljuc.
-//jpa mora imati id
+@IdClass(RolePermissionId.class) //making a composite key.
+//jpa must have identity column
 
 public class RolePermissionDB {
 
@@ -23,7 +23,7 @@ public class RolePermissionDB {
     public RolePermissionDB() {
     }
 
- //geteri i seteri
+    //getters and setters
     public RoleDB getRoleId() {
         return roleId;
     }

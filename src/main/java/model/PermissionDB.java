@@ -18,7 +18,7 @@ public class PermissionDB {
     public PermissionDB() {
     }
 
-    //geteri i seteri
+    //geters and setters
 
     public int getPermissionId() {
         return permissionId;

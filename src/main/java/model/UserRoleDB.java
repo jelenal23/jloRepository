@@ -5,8 +5,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "userRole")
 
-@IdClass(UserRoleId.class) //jer nemam pravi id u ovoj tabeli pa se bunio, jpa mora imati id
-//ovde pravim id pridruzene kljuceve
+// jpa must have an id field. this table don't have real id column, just foreign keys so
+//I have to make an id composite key with this two columns
+@IdClass(UserRoleId.class)
 
 
 public class UserRoleDB {
@@ -24,7 +25,7 @@ public class UserRoleDB {
     public UserRoleDB() {
     }
 
-    //geteri i seteri
+    //getters and setters
     public UserDB getIduser() {
         return iduser;
     }
